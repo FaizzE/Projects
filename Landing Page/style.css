@@ -62,7 +62,7 @@ header p {
 .feature:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    color: rgb(110, 153, 179);
+    color: rgbrgb(155, 92, 9);
     
 }
 
