@@ -40,7 +40,7 @@ header p {
 }
 
 .action-btn:hover {
-    background-color: lightskyblue;
+    background-color: rgb(155, 92, 9);
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -67,7 +67,7 @@ header p {
 }
 
 footer {
-    background-color: burlywood;
+    background-color: rgb(155, 92, 9);
     color: white;
     text-align: center;
     padding: 10px 0;
