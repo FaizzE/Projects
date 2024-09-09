@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback survey Form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form">
+        <h1>Feedback Survey Form</h1>
+
+        <form id="survey-form">
+
+            <label for="username">Name:</label><br>
+            <input type="text" id="username"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"><br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age"><br><br>
+            
+            <label for="">Type of Feedback:</label><br>
+            <select name="feedback-type" id="feedback-type">
+                <option value="#">Positive</option>
+                <option value="#">Negative</option>
+                <option value="#">Suggestion</option>
+            </select> <br><br>
+
+            <fieldset>
+                <legend>Service Used:</legend>
+
+                <input type="checkbox" id="service1" name="services" value="service1">
+                <label for="service1">Service 1</label><br>
+                
+                <input type="checkbox" id="services2" name="services" value="service2">
+                <label for="services2">Service 2</label><br>
+
+                <input type="checkbox" id="services3" name="services" value="services3">
+                <label for="services3">Services 3</label>
+
+            </fieldset><br>
+            <label for="additional-comments">Additional Comments:</label><br>
+            <textarea name="additional-comments" id="additional-comments" rows="4"></textarea> <br><br>
+            
+            <button>Submit Feedback</button>
+        </form>
+
+    </div>
+    
+</body>
+</html>
