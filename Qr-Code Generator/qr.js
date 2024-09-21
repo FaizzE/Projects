@@ -11,7 +11,8 @@ qrbutton.addEventListener('click', () => {
     if(!inputValue){
         alert('Please Enter a Valid Url or Text');
         return;
-    }else{
+    }
+    else{
         qrimg.src=`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${inputValue}`;
         qrimg.alt=`QR Code for ${inputValue}`;
     }
