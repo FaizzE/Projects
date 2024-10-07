@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: azure;
+    cursor: pointer;
+}
+.logo:hover {
+    color: white;
+}
+
+.links {
+    display: flex;
+    gap: 50px;
+}
+.links a {
+    text-decoration: none;
+    color: azure;
+}
+.links a:hover {
+    color: rgb(128, 128, 128);
+}
+
+.login-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+}
+
+.login-btn:hover {
+    color: black;
+}
