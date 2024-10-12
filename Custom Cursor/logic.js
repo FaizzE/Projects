@@ -11,7 +11,6 @@ main.addEventListener("mousemove", function(move){
     console.log("movement");
     
     // clearTimeout(timeout);
-
     timeout = setTimeout(function() {
         cursor.style.opacity = "0"; 
         cursor.style.transform = "scale(1)"; 
