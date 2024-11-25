@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Navbar styling */
+.navbar {
+    width: 100vw;
+    height: 5.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: 0.1px solid rgba(0, 0, 0, 0.183); 
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3vw;
+    margin-left: 1vw;
+}
+
+.text {
+    font-size: 18px;
+}
+
+.btn {
+    margin-right: 2vw;
+    display: flex;
+    gap: 18px; 
+    font-size: 18px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+/* Media Query for Screens 710px or Less */
+@media (max-width: 710px) {
+    .navbar {
+        height: 10vh; /* Grow height */
+    }
+
+    .text p {
+        max-width: 20ch; /* Limit the text width to 20 characters (approx 3 lines) */
+        text-align: left; /* Optional: Align text to the left */
+        margin: 0 auto; /* Center the paragraph block if needed */
+    }
+}
+@media (max-width: 500px) {
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .text {
+        display: none; /* Hide the text content */
+    }
+    .btn {
+        gap: 18px;
+    }
+}
