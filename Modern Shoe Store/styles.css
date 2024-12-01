@@ -4,7 +4,14 @@
     /* margin-left: 10px; */
     box-sizing: border-box;
     /* overflow: hidden; */
+    /* outline: 1px solid blue; */
 }
+html,body {
+    overflow-x: hidden;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
 /* Navbar styling */
 .navbar {
     width: 100vw;
@@ -85,8 +92,6 @@
     color: #333333;
 }
 
-
-
 /*========= for mobile ======== */
 
 .logo2-1 {
@@ -109,9 +114,8 @@
 /* ============================    Hero Section ==================== */
 
 .hero {
-    /* background-color: antiquewhite; */
     width: 100vw;
-    height: 220vh;
+    height: 210vh;
     margin-top: 2vw;
     display: flex;
     flex-direction: column;
@@ -210,56 +214,6 @@
     }
 }
 
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        height: 360vh;
-    }
-    .offer {
-        display: none;
-    }
-
-    .product1, .product2 {
-        flex-direction: column; 
-    }
-
-    .pic1, .pic2, .pic3, .pic4 {
-        width: calc(100% - 4vw); 
-        margin: 2vw 2vw 2vw 2vw; 
-        overflow: hidden;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        flex-direction: column;
-        height: 360vh;
-    }
-    .offer {
-        display: none;
-    }
-    .product1, .product2 {
-        flex-direction: column; 
-    }
-
-    .pic1, .pic2, .pic3, .pic4 {
-        width: calc(100% - 4vw); 
-        margin: 2vw; 
-        overflow: hidden;
-    }
-}
-
-@media (max-width: 768px), (max-width: 480px) {
-    .offer {
-        display: none; 
-    }
-}
-
-
-
-
-
-
 
 .dots {
     display: flex;
@@ -328,14 +282,118 @@
 
 
 
-
-
-
-.main {
-    background-color: salmon;
+.featured {
     width: 100vw;
-    height: 100vh;
+    height: 63vh;
+    margin-left: 4vw;
 }
+.feat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5vw;
+    text-transform: uppercase;
+}
+.head {
+    font-size: 25px;
+    letter-spacing: 0.5vw;
+}
+.view {
+    margin-right: 10vw;
+}
+.items {
+    width: 100%;
+    display: flex;
+    height: 30vh;
+    cursor: pointer;
+}
+.fbox1 {
+    width: 17%;
+    height: 100%;
+    margin-right: 1.5vw;
+}
+.pic {
+    overflow: hidden;
+    height: 100%;
+}
+.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+}
+.pic:hover img {
+    transform: scale(1.2);
+}
+
+
+.hero2 {
+    /* background-color: lightgreen; */
+    width: 91vw;
+    height: 105vh;
+    margin-left: 3.8vw;
+    margin-right: 4vw;
+    margin-bottom: 4vw;
+    display: flex;
+}
+.photo1 {
+    background-color: lightcoral;
+    width: 47vw;
+    height: 92vh;
+    border-radius: 18px; 
+}
+.photo1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px; 
+}
+.photo2 {
+    background-color: lightsalmon;
+    width: 47vw;
+    height: 92vh;
+    border-radius: 18px;
+    margin-left: 2vw;
+}
+.photo2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px; 
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .content {
     background-color: crimson;
     width: 100vw;
@@ -369,13 +427,13 @@
 /* Media Query for Screens 710px or Less */
 @media (max-width: 900px) {
     .navbar {
-        height: 90px; /* Grow height */
+        height: 90px; 
     }
 
     .text p {
-        max-width: 20ch; /* Limit the text width to 20 characters (approx 3 lines) */
-        text-align: left; /* Optional: Align text to the left */
-        margin: 0 auto; /* Center the paragraph block if needed */
+        max-width: 20ch; 
+        text-align: left; 
+        margin: 0 auto; 
     }
 }
 @media (max-width: 500px) {
@@ -385,7 +443,7 @@
         align-items: center;
     }
     .text {
-        display: none; /* Hide the text content */
+        display: none; 
     }
     .btn {
         gap: 18px;
@@ -410,5 +468,119 @@
        display: flex;
        justify-content: center;
        flex-direction: column;
+    }
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column; 
+        height: 340vh;
+    }
+    .offer {
+        display: none;
+    }
+    .product1, .product2 {
+        flex-direction: column; 
+    }
+
+    .pic1, .pic2, .pic3, .pic4 {
+        width: 100%; 
+        margin: 1vw 0; 
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-bottom: 2vw;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: 340vh;
+    }
+    .offer {
+        display: none;
+    }
+
+    .product1, .product2 {
+        flex-direction: column; 
+    }
+
+    .pic1, .pic2, .pic3, .pic4 {
+        width: calc(100% - 4vw); 
+        margin: 2vw 2vw 2vw 2vw; 
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        flex-direction: column;
+        height: 340vh;
+    }
+    .offer {
+        display: none;
+    }
+    .product1, .product2 {
+        flex-direction: column; 
+    }
+
+    .pic1, .pic2, .pic3, .pic4 {
+        width: calc(100% - 4vw); 
+        margin: 2vw; 
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 768px), (max-width: 480px) {
+    .offer {
+        display: none; 
+    }
+}
+
+
+@media screen and(max-width: 768px){
+    
+}
+
+/* featured section ========= */
+
+@media (max-width: 768px) {
+    .featured {
+        margin-left: 4vw;
+        height: 170vh;
+    }
+    .items {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .fbox1 {
+        width: 45%;
+        margin-bottom: 2vh;
+    }
+    .head {
+        font-size: 20px;
+        margin-bottom: 1vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .featured {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        height: 350vh;
+    }
+    .items {
+        flex-direction: column;
+    }
+    .fbox1 {
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+    .head {
+        font-size: 18px;
+        margin-bottom: 1vh;
     }
 }
