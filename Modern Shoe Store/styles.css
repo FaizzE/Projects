@@ -325,6 +325,20 @@ html,body {
 .pic:hover img {
     transform: scale(1.2);
 }
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 0.7vw;
+}
+.info a {
+    text-decoration: none;
+    color: #111111;
+    font-weight: 500;
+    font-size: 17px;
+}
+
 
 
 .hero2 {
@@ -361,6 +375,7 @@ html,body {
     border-radius: 18px; 
     object-fit: cover;
 }
+
 
 
 
@@ -493,6 +508,18 @@ html,body {
         margin-bottom: 2vw;
         overflow: hidden;
     }
+    .hero2 {
+        flex-direction: column;
+    }
+    .photo1 {
+        width: 90vw;
+        margin-bottom: 7vw;
+        margin-left: 1vw;
+    }
+    .photo2 {
+        width: 90vw;
+        margin-right: vw;
+    }
 }
 
 @media (max-width: 768px) {
@@ -528,8 +555,8 @@ html,body {
     }
 
     .pic1, .pic2, .pic3, .pic4 {
-        width: calc(100% - 4vw); 
-        margin: 2vw; 
+        width: calc(100% - 7.5vw); 
+        margin: 4vw; 
         overflow: hidden;
     }
 }
@@ -578,6 +605,11 @@ html,body {
     .fbox1 {
         width: 100%;
         margin-bottom: 3vh;
+    }
+    .pic, .info{
+        width: calc(100% - 8.5vw); 
+        margin: 3.3vw; 
+        overflow: hidden;
     }
     .head {
         font-size: 18px;
