@@ -1,2 +1,2 @@
 # Projects
-Random Projects
+Practice Projects
